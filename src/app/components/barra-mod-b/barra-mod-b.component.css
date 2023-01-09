@@ -1,0 +1,21 @@
+#progressb {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    float: left;
+    margin-top: 3px;
+  }
+  
+#progressb-value {
+  display: block;
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+  background-color: #ffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 20px;
+}

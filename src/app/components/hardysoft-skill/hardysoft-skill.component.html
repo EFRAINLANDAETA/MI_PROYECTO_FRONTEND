@@ -1,0 +1,70 @@
+<div class="container p-0">
+    <div class="row p-0 m-0">
+        <div class="div col-12" style="height: 5px; background-color: rgb(45, 64, 88)"></div>
+        <div class="div col-5 p-0">
+            <div class="position-relative h_delante">
+                <div class="col-12 shadow titulo-01 position-absolute top-0 d-block" style="background-color: rgb(45, 64, 88)">
+                    <span class="align-center fs-3 ps-3 fst-italic text-white">H & S Skill...</span>
+                </div>
+                <div class="col-12">
+                    <a class="position-absolute top-0 end-0 pe-3 pt-1" href="#"><img src="../../../assets/btn_edi_01.png" alt="" width="25" height="25"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container col-12 base_barras bg-light pt-5 pb-4 border-start border-end">
+        <div class="div"> 
+            <div class="border-bottom" style="height: 10px"></div>
+            <div class="border-bottom mb-3" style="height: 10px"></div>
+            <div class="contenedor m-2 d-inline-block">
+                <span><app-barra-mod-a [progressa]="progressa"></app-barra-mod-a></span>
+                <div class="position-absolute letras">
+                    <h1>{{ progressa_02 }}%</h1>
+                    <h2>{{varx.propiedad01}}</h2>
+                </div>
+            </div>
+            <div class="contenedor m-2 d-inline-block">
+                <span><app-barra-mod-b [progressb]="progressb"></app-barra-mod-b></span>
+                <div class="position-absolute letras">
+                    <h1>{{ progressb_02 }}%</h1>
+                    <h2>{{varx.propiedad02}}</h2>
+                </div>
+                </div>
+            <div class="contenedor m-2 d-inline-block">
+                <span><app-barra-mod-c [progressc]="progressc"></app-barra-mod-c></span>
+                <div class="position-absolute letras">
+                    <h1>{{ progressc_02 }}%</h1>
+                    <h2>{{varx.propiedad03}}</h2>
+                </div>
+            </div>
+            <div class="border-bottom" style="height: 20px"></div>
+        </div>
+    </div>
+    <div class="container base_barras bg-light pb-4 border-start border-end">
+        <div class="div">
+            <div class="contenedor m-2 d-inline-block">
+                <span><app-barra-mod-d [progressd]="progressd"></app-barra-mod-d></span>
+                <div class="position-absolute letras">
+                    <h1>{{ progressd_02 }}%</h1>
+                    <h2>{{varx.propiedad04}}</h2>
+                </div>
+            </div>
+            <div class="contenedor m-2 d-inline-block">
+                <span><app-barra-mod-e [progresse]="progresse"></app-barra-mod-e></span>
+                <div class="position-absolute letras">
+                    <h1>{{ progresse_02 }}%</h1>
+                    <h2>{{varx.propiedad05}}</h2>
+                </div>
+            </div>
+            <div class="contenedor m-2 d-inline-block">
+                <span><app-barra-mod-f [progressf]="progressf"></app-barra-mod-f></span>
+                <div class="position-absolute letras">
+                    <h1>{{ progressf_02 }}%</h1>
+                    <h2>{{varx.propiedad06}}</h2>
+                </div>
+            </div>
+            <div class="border-bottom" style="height: 10px"></div>
+            <div class="border-bottom" style="height: 10px"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+<div class="container p-0">
+    <div class="row p-0 m-0 border-start">
+        <div class="div col-12" style="height: 5px; background-color: rgb(45, 64, 88)"></div>
+        <div class="div col-5 p-0">
+            <div class="position-relative h_delante">
+                <div class="col-12 shadow titulo-01 position-absolute top-0 d-block" style="background-color: rgb(45, 64, 88)">
+                    <span class="align-center fs-3 ps-3 fst-italic text-white">Proyectos...</span>
+                </div>
+                <div class="col-12">
+                    <a class="position-absolute top-0 end-0 pe-3 pt-1" href="#"><img src="../../../assets/btn_mas_02.png" alt="" width="25" height="25"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="list-group">
+        <li *ngFor="let proyectos of proyectosList">
+            <div class="container">
+                <div class="col-12  position-relative" style="height: 30px">
+                    <a class="position-absolute top-0 end-0 mt-5 pe-4" style="text-align: center;" href="#"><img src="../../../assets/btn_edi_negro.png" alt="" width="25" height="25"></a><a class="position-absolute top-0 end-0 mt-5" style="text-align: center;" href="#"><img src="../../../assets/btn_eli_01.png" alt="" width="25" height="25"></a>
+                </div>
+                <h3 class="col-12 pt-4">{{proyectos.titulo}}</h3>
+                <h5 class="fst-italic">{{proyectos.empresa}}</h5>
+                <h5 class="fst-italic"><time>{{proyectos.inicio}}</time> - <time>{{proyectos.final}}</time></h5>
+                <p class="">{{proyectos.descripcion}}</p>
+                <!--modulo interno-->
+                <div class="row col-12 m-0 p-0">
+                    <div class="col-3 position-relative">
+                        <a class="position-absolute fs-3 fst-italic top-50 start-50 translate-middle" style="text-align: center;" href="#">
+                            <img [src]="proyectos.logoEmpresa" class="img-fluid" style="width: 175px; height: 175px" alt="...">    
+                        </a>
+                    </div>
+                    <div class="col-9">
+                        <div class="row col-12 position-relative">
+                            <div>
+                                <img [src]="proyectos.referencias.img01" class="img-fluid" style="width: 300px; height: 250px" alt="...">
+                            </div>
+                            <div class="col-md-4 col-lg-6 col-xl-7 position-absolute end-0 d-none d-md-block">
+                                <div class="border-bottom" style="height: 10px"></div>
+                                <div class="border-bottom mb-3" style="height: 10px"></div>
+                                <div class="div overflow-auto" style="height: 180px">
+                                    <h5 class="text-dark">{{proyectos.referencias.subTitulo01}}</h5>
+                                    <p class="text-dark">{{proyectos.referencias.descripcion01}}</p>
+                                </div>
+                                <div class="border-bottom" style="height: 10px"></div>
+                                <div class="border-bottom" style="height: 10px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

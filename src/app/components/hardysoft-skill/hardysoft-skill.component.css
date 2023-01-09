@@ -1,0 +1,30 @@
+.base_barras{
+    display: flex;
+    justify-content: center;
+}
+.contenedor{
+    height: 100px;
+    width: 200px;
+    overflow: hidden;
+}
+.letras {
+    height: 200px;
+    width: 200px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    color: rgb(10, 214, 10);
+    text-align: center;
+}
+.letras h2{
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.letras h1{
+    font-family: sans-serif;
+    margin-bottom: -27px;
+}
+.letras h1,h2{
+    margin-top: 20px;
+}

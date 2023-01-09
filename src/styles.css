@@ -1,0 +1,15 @@
+.titulo-01 {
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.h_delante {
+    z-index: 50;
+}
+.B-banner-01 {
+    border-bottom-left-radius: 100px;
+}
+
+ul {
+    list-style: none;
+}
+
