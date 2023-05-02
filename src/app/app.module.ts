@@ -20,6 +20,10 @@ import { BarraModDComponent } from './components/barra-mod-d/barra-mod-d.compone
 import { BarraModEComponent } from './components/barra-mod-e/barra-mod-e.component';
 import { BarraModFComponent } from './components/barra-mod-f/barra-mod-f.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+import { AppRoutingModule } from './app-routing.module';
+
 
 
 @NgModule({
@@ -33,7 +37,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     ProyectosComponent,
     EstudiosComponent,
     HardysoftSkillComponent,
-
+    
     FooterComponent,
     BarraModAComponent,
     BarraModBComponent,
@@ -41,6 +45,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     BarraModDComponent,
     BarraModEComponent,
     BarraModFComponent,
+    HomeComponent,
+    LoginComponent,
   ],
 
   imports: [
@@ -48,7 +54,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     HttpClientModule,
     FormsModule, 
     ReactiveFormsModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
